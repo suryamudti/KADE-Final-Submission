@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mlsdev.animatedrv:library:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.1.aar/fe63f3d4b808152311a7e355fbb1fcf8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.1.aar/fe63f3d4b808152311a7e355fbb1fcf8/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
