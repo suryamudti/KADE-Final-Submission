@@ -55,7 +55,7 @@ class HomeFragment : Fragment(), HomeView {
         val apiRepository = ApiRepository()
         val presenter = HomePresenter(this,apiRepository)
         myPreference = MyPreference(this.activity!!)
-        presenter.getDetailLiga(myPreference.getLeagueId())
+        presenter.getDetailLeague(myPreference.getLeagueId())
 
         return rootView
     }
@@ -68,7 +68,7 @@ class HomeFragment : Fragment(), HomeView {
         }
     }
 
-    override fun showLiga(liga: League) {
+    override fun showLeague(liga: League) {
         shimmer.stopShimmerAnimation()
         shimmer.visibility = View.GONE
 

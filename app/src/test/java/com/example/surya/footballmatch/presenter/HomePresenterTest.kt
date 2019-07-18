@@ -20,11 +20,8 @@ class HomePresenterTest {
     private lateinit var view: HomeView
     @Mock
     private lateinit var apiRepository: ApiRepository
-
     @Mock
     private lateinit var presenter: HomePresenter
-    @Mock
-    private lateinit var leagueResponse: League
 
     @Before
     fun setUp() {
@@ -35,9 +32,9 @@ class HomePresenterTest {
 
 
     @Test
-    fun getDetailLiga() {
+    fun getDetailLeagueTest() {
         val id = "4328"
-        presenter.getDetailLiga(id)
+        presenter.getDetailLeague(id)
         val connect : MyApi = apiRepository.getUrl().create(MyApi::class.java)
         argumentCaptor<HomeView>().apply {
             connect.getDetailLeague(id).enqueue(object : Callback<LeagueResponse> {
@@ -47,10 +44,9 @@ class HomePresenterTest {
 
                 override fun onResponse(call: Call<LeagueResponse>, response: Response<LeagueResponse>) {
                     val get: League = response.body()!!.leagues.get(0)
-                    firstValue.showLiga(get)
-                    Mockito.verify(view.showLiga(get))
+                    firstValue.showLeague(get)
+                    Mockito.verify(view.showLeague(get))
                 }
-
             })
         }
 

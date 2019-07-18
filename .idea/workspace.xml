@@ -12,26 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33c806cc-2717-48c8-8d34-c8d2e64240c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_core_testing_1_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_contrib_2_2_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_rules_1_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_apps_common_testing_accessibility_framework_accessibility_test_framework_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nhaarman_mockito_kotlin_1_5_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_9_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_9_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_0_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_2_23_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_2_7_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_inline_2_23_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/surya/footballmatch/view/activity/LeagueActivityTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/repository/RepositoryUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/DetailPresenterTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/HomePresenterTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/NextPresenterTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/PrevPresenterTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dicoding_kotlin_android_submission_4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -42,18 +22,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/NextPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/NextPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/PrevPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/PrevPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/adapter/MyPagerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/adapter/MyPagerAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/NextFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/NextFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/PreviousFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/PreviousFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dicoding_kotlin_android_submission_3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/surya/footballmatch/view/activity/LeagueActivityTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/surya/footballmatch/view/activity/LeagueActivityTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/HomePresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/HomePresenter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/activity/LeagueActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/activity/LeagueActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/interfaces/HomeView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/interfaces/HomeView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_league.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_league.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/DetailPresenterTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/DetailPresenterTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/HomePresenterTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/HomePresenterTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/NextPresenterTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/NextPresenterTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/PrevPresenterTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/PrevPresenterTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,11 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/NextPresenterTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-              <folding>
-                <element signature="e#51#333#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -91,54 +68,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/surya/footballmatch/view/activity/LeagueActivityTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+            <state relative-caret-position="255">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/DetailPresenterTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_search.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/HomePresenterTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="374">
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/interfaces/HomeView.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/model/LeagueResponse.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nhaarman/mockito-kotlin/1.5.0/87eb468d9b75a267dd1a3f354e5b7284bea20217/mockito-kotlin-1.5.0-sources.jar!/com/nhaarman/mockito_kotlin/ArgumentCaptor.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/repository/ApiRepository.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/HomePresenter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/MainPresenter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/NextPresenter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/NextFragment.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="100" column="34" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
+            <state relative-caret-position="102">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -146,29 +140,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/PrevPresenterTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+            <state relative-caret-position="-17">
+              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
               <folding>
                 <element signature="e#51#615#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/PreviousFragment.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/PrevPresenter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -223,7 +199,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main_backup.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/activity/MainActivityBack.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/interfaces/HomeView.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/HomePresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/HomeFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/adapter/PagerFavoriteAdapter.kt" />
@@ -250,25 +225,26 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/repository/RepositoryUnitTest.kt" />
-        <option value="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/DetailPresenterTest.kt" />
-        <option value="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/HomePresenterTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/NextPresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/NextFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/PreviousPresenterTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/PrevPresenter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/PreviousFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/surya/footballmatch/view/activity/LeagueActivityTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/HomePresenterTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/interfaces/HomeView.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/PrevPresenterTest.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/NextPresenterTest.kt" />
-        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/surya/footballmatch/view/activity/LeagueActivityTest.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/PreviousFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/DetailPresenterTest.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1050" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -277,18 +253,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="KADE-Submisi-2-Dicoding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KADE-Submisi-2-Dicoding" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -340,17 +304,6 @@
               <item name="surya" type="462c0819:PsiDirectoryNode" />
               <item name="footballmatch" type="462c0819:PsiDirectoryNode" />
               <item name="presenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dicoding_kotlin_android_submission_4" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="surya" type="462c0819:PsiDirectoryNode" />
-              <item name="footballmatch" type="462c0819:PsiDirectoryNode" />
-              <item name="presenter" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dicoding_kotlin_android_submission_4" type="1abcf292:AndroidViewProjectNode" />
@@ -422,57 +375,6 @@
               <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="surya" type="462c0819:PsiDirectoryNode" />
               <item name="footballmatch" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dicoding_kotlin_android_submission_4" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="surya" type="462c0819:PsiDirectoryNode" />
-              <item name="footballmatch" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dicoding_kotlin_android_submission_4" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dicoding_kotlin_android_submission_4" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dicoding_kotlin_android_submission_4" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="surya" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dicoding_kotlin_android_submission_4" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="surya" type="462c0819:PsiDirectoryNode" />
-              <item name="footballmatch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dicoding_kotlin_android_submission_4" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="surya" type="462c0819:PsiDirectoryNode" />
-              <item name="footballmatch" type="462c0819:PsiDirectoryNode" />
               <item name="presenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -484,6 +386,18 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="KADE-Submisi-2-Dicoding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KADE-Submisi-2-Dicoding" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -491,7 +405,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../KADE-Submisi-4-Dicoding" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1563290723774" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1563402780545" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -529,7 +443,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android Instrumented Tests.LeagueActivityTest">
+  <component name="RunManager" selected="Android JUnit.com in app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -650,8 +564,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android Instrumented Tests.LeagueActivityTest" />
         <item itemvalue="Android JUnit.com in app" />
+        <item itemvalue="Android Instrumented Tests.LeagueActivityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -669,27 +583,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LeagueActivityTest - 2019.07.17 at 21h 43m 39s.xml">
-      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="LeagueActivityTest - 2019.07.17 at 21h 44m 23s.xml">
-      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="LeagueActivityTest - 2019.07.17 at 21h 45m 50s.xml">
-      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="LeagueActivityTest - 2019.07.17 at 21h 47m 07s.xml">
-      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="LeagueActivityTest - 2019.07.17 at 21h 52m 39s.xml">
-      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="LeagueActivityTest - 2019.07.17 at 21h 53m 25s.xml">
-      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="LeagueActivityTest - 2019.07.17 at 21h 54m 28s.xml">
-      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="LeagueActivityTest - 2019.07.17 at 21h 56m 47s.xml">
       <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
@@ -699,13 +592,34 @@
     <history-entry file="LeagueActivityTest - 2019.07.17 at 21h 59m 38s.xml">
       <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
+    <history-entry file="LeagueActivityTest - 2019.07.17 at 22h 26m 29s.xml">
+      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="com_in_app - 2019.07.17 at 22h 29m 49s.xml">
+      <configuration name="com in app" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="com_in_app - 2019.07.18 at 04h 45m 19s.xml">
+      <configuration name="com in app" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="LeagueActivityTest - 2019.07.18 at 04h 46m 19s.xml">
+      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="LeagueActivityTest - 2019.07.18 at 04h 54m 49s.xml">
+      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="LeagueActivityTest - 2019.07.18 at 04h 56m 50s.xml">
+      <configuration name="LeagueActivityTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="com_in_app - 2019.07.18 at 06h 20m 17s.xml">
+      <configuration name="com in app" configurationId="AndroidJUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-6" y="0" width="781" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49915397" visible="true" weight="0.1818792" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49915397" visible="true" weight="0.29126215" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" sideWeight="0.500846" side_tool="true" weight="0.15100671" />
       <window_info id="Image Layers" order="4" />
@@ -714,12 +628,12 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="0" weight="0.32485875" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.325419" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.5127119" />
       <window_info anchor="bottom" id="Logcat" order="2" weight="0.4180791" />
       <window_info anchor="bottom" id="TODO" order="3" />
-      <window_info anchor="bottom" id="Android Profiler" order="4" />
+      <window_info anchor="bottom" id="Android Profiler" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32768363" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.32909605" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3282123" />
       <window_info anchor="bottom" id="Debug" order="7" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32960895" />
@@ -735,32 +649,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_league_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#1979#2000#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_favorite_previous.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/model/FavoritePrevious.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/activity/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -776,6 +664,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/detail_menu.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
@@ -784,7 +673,6 @@
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/activity/DetailActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -797,13 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/interfaces/HomeView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -822,12 +703,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/data_placeholder_tablayout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="69" column="19" selection-start-line="63" selection-start-column="4" selection-end-line="69" selection-end-column="19" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/HomeFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -837,28 +718,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_prev.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_next.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -900,12 +781,12 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_favorite.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/DetailPresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -932,12 +813,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/FavoriteFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -973,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/activity/LeagueActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -991,33 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/repository/ApiRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/DetailPresenterTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-          <folding>
-            <element signature="e#51#617#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/HomePresenterTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-          <folding>
-            <element signature="e#51#485#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,30 +882,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/PrevPresenterTest.kt">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding>
-            <element signature="e#51#615#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="918">
+          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/NextPresenterTest.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_search.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-          <folding>
-            <element signature="e#51#333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/HomePresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1069,32 +904,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_search.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/PreviousFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="204">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/surya/footballmatch/view/activity/LeagueActivityTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/PrevPresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="561">
           <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/fragment/PreviousFragment.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/surya/footballmatch/view/activity/LeagueActivityTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="255">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/repository/ApiRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/presenter/HomePresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nhaarman/mockito-kotlin/1.5.0/87eb468d9b75a267dd1a3f354e5b7284bea20217/mockito-kotlin-1.5.0-sources.jar!/com/nhaarman/mockito_kotlin/ArgumentCaptor.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/model/LeagueResponse.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/surya/footballmatch/view/interfaces/HomeView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/HomePresenterTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/PrevPresenterTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="e#51#615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/NextPresenterTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/surya/footballmatch/presenter/DetailPresenterTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
         </state>
       </provider>
     </entry>

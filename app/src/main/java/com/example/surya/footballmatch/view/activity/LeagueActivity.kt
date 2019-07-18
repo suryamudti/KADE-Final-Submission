@@ -18,7 +18,7 @@ class LeagueActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
-        recyclerView = findViewById(R.id.recycleLiga)
+        recyclerView = findViewById(R.id.recycleLeague)
         initData()
     }
 

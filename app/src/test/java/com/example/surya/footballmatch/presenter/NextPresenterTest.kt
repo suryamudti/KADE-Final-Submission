@@ -31,7 +31,7 @@ class NextPresenterTest {
     }
 
     @Test
-    fun getTeamList() {
+    fun getTeamListTest() {
         val id = "4328"
         presenter.getTeamList(id)
         val connect: MyApi = apiRepository.getUrl().create(MyApi::class.java)
@@ -54,7 +54,7 @@ class NextPresenterTest {
     }
 
     @Test
-    fun getTeamSearch() {
+    fun getTeamSearchTest() {
         val club = "chelsea"
         presenter.getTeamSearch(club)
         val connect: MyApi = apiRepository.getUrl().create(MyApi::class.java)

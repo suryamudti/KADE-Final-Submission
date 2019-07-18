@@ -1,8 +1,6 @@
 package com.example.surya.footballmatch.view.activity
 
-import android.support.test.espresso.Espresso
 import android.support.test.espresso.Espresso.onView
-import android.support.test.espresso.action.ViewActions
 import android.support.test.espresso.action.ViewActions.*
 import android.support.test.espresso.assertion.ViewAssertions
 import android.support.test.espresso.contrib.RecyclerViewActions
@@ -26,17 +24,14 @@ class LeagueActivityTest {
     @Test
     fun testSearch(){
         Thread.sleep(2000)
-        onView(withId(R.id.recycleLiga)).check(ViewAssertions.matches(isDisplayed()))
-        onView(withId(R.id.recycleLiga)).perform(
+        onView(withId(R.id.recycleLeague)).check(ViewAssertions.matches(isDisplayed()))
+        onView(withId(R.id.recycleLeague)).perform(
             RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(0, click())
         )
 
         Thread.sleep(5000)
         onView(withId(R.id.searchView)).perform(click())
-
-        Thread.sleep(2000)
         onView(isAssignableFrom(AutoCompleteTextView::class.java))
-            .perform(click())
             .perform(typeText("Arsenal"))
             .perform(pressImeActionButton())
             .perform(pressBack())

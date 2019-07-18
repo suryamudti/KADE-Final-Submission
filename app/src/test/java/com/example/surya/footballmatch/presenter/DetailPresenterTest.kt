@@ -33,12 +33,12 @@ class DetailPresenterTest {
     }
 
     @Test
-    fun getDetailEvent(){
-        val id_event = "600441"
-        presenter.getDetailEvent(id_event)
+    fun getDetailEventTest(){
+        val eventId = "600441"
+        presenter.getDetailEvent(eventId)
         val connect : MyApi = apiRepository.getUrl().create(MyApi::class.java)
         argumentCaptor<DetailView>().apply {
-            connect.getDetailEvent(id_event).enqueue(object : Callback<MatchRespone> {
+            connect.getDetailEvent(eventId).enqueue(object : Callback<MatchRespone> {
                 override fun onFailure(call: Call<MatchRespone>, t: Throwable) {
                 }
 
@@ -46,22 +46,18 @@ class DetailPresenterTest {
                     val getDetail : Event = response.body()!!.events.get(0)
                     firstValue.showDetailEvent(getDetail)
                     Mockito.verify(view.showDetailEvent(getDetail))
-
-
                 }
-
-
             })
         }
     }
 
     @Test
-    fun getDetailHome() {
-        val id_teams = "134553"
-        presenter.getDetailHome(id_teams)
+    fun getDetailHomeTest() {
+        val teamId = "134553"
+        presenter.getDetailHome(teamId)
         val connect : MyApi = apiRepository.getUrl().create(MyApi::class.java)
         argumentCaptor<DetailView>().apply {
-            connect.getDetailTeam(id_teams).enqueue(object : Callback<MatchRespone>{
+            connect.getDetailTeam(teamId).enqueue(object : Callback<MatchRespone>{
                 override fun onFailure(call: Call<MatchRespone>, t: Throwable) {
 
                 }
@@ -79,12 +75,12 @@ class DetailPresenterTest {
     }
 
     @Test
-    fun getDetailAway() {
-        val id_teams = "134440"
-        presenter.getDetailAway(id_teams)
+    fun getDetailAwayTest() {
+        val teamId = "134440"
+        presenter.getDetailAway(teamId)
         val connect : MyApi = apiRepository.getUrl().create(MyApi::class.java)
         argumentCaptor<DetailView>().apply {
-            connect.getDetailTeam(id_teams).enqueue(object : Callback<MatchRespone>{
+            connect.getDetailTeam(teamId).enqueue(object : Callback<MatchRespone>{
                 override fun onFailure(call: Call<MatchRespone>, t: Throwable) {
 
                 }

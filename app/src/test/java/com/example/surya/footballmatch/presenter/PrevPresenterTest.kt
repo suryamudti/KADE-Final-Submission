@@ -35,7 +35,7 @@ class PrevPresenterTest {
     }
 
     @Test
-    fun getLastMatch() {
+    fun getLastMatchTest() {
         val id = "4328"
         presenter.getLastMatch(id)
         val connect : MyApi = apiRepository.getUrl().create(MyApi::class.java)
@@ -51,13 +51,12 @@ class PrevPresenterTest {
                     firstValue.ShowMatchList(get)
                     Mockito.verify(view.ShowMatchList(get))
                 }
-
             })
         }
     }
 
     @Test
-    fun getTeamSearch() {
+    fun getTeamSearchTest() {
         val query = "barcelona"
         val connect: MyApi = apiRepository.getUrl().create(MyApi::class.java)
         presenter.getTeamSearch(query)

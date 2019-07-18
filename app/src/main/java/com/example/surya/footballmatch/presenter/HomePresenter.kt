@@ -11,7 +11,7 @@ import retrofit2.Response
 
 class HomePresenter(private var view: HomeView, private var apiRepository: ApiRepository) {
 
-    fun getDetailLiga(id: String) {
+    fun getDetailLeague(id: String) {
         val connect: MyApi = apiRepository.getUrl().create(MyApi::class.java)
         connect.getDetailLeague(id).enqueue(object : Callback<LeagueResponse> {
             override fun onFailure(call: Call<LeagueResponse>, t: Throwable) {
@@ -20,7 +20,7 @@ class HomePresenter(private var view: HomeView, private var apiRepository: ApiRe
 
             override fun onResponse(call: Call<LeagueResponse>, response: Response<LeagueResponse>) {
                 val get: League? = response.body()?.leagues?.get(0)
-                view?.showLiga(get!!)
+                view?.showLeague(get!!)
             }
 
         })
