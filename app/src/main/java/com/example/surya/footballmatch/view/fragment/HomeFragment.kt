@@ -13,9 +13,11 @@ import android.widget.TextView
 
 import com.example.surya.footballmatch.R
 import com.example.surya.footballmatch.model.League
+import com.example.surya.footballmatch.model.LeagueResponse
 import com.example.surya.footballmatch.presenter.HomePresenter
 import com.example.surya.footballmatch.presenter.MainPresenter
 import com.example.surya.footballmatch.presenter.repository.ApiRepository
+import com.example.surya.footballmatch.presenter.repository.MatchRepository
 import com.example.surya.footballmatch.utils.preference.MyPreference
 import com.example.surya.footballmatch.view.adapter.MyPagerAdapter
 import com.example.surya.footballmatch.view.interfaces.HomeView
@@ -31,7 +33,6 @@ class HomeFragment : Fragment(), HomeView {
     private lateinit var txtWebsite: TextView
     private lateinit var txtLeagueCountry : TextView
     private lateinit var layoutScreen : LinearLayout
-    private lateinit var presenter: MainPresenter
     private lateinit var myPreference: MyPreference
     private lateinit var shimmer: ShimmerFrameLayout
 
@@ -52,8 +53,7 @@ class HomeFragment : Fragment(), HomeView {
         layoutScreen = rootView.findViewById(R.id.layout_screen)
 
         shimmer.startShimmerAnimation()
-        val apiRepository = ApiRepository()
-        val presenter = HomePresenter(this,apiRepository)
+        val presenter = HomePresenter(this, MatchRepository())
         myPreference = MyPreference(this.activity!!)
         presenter.getDetailLeague(myPreference.getLeagueId())
 
@@ -85,6 +85,14 @@ class HomeFragment : Fragment(), HomeView {
         txtLiga.text = liga.strLeague
         txtLeagueCountry.text = liga.strCountry
         txtWebsite.text = liga.strWebsite
+
+    }
+
+    override fun onDataLoaded(data: LeagueResponse?) {
+        data?.leagues?.get(0)?.let { showLeague(it) }
+    }
+
+    override fun onDataError() {
 
     }
 

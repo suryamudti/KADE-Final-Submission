@@ -1,72 +1,70 @@
 package com.example.surya.footballmatch.presenter
 
+import android.util.Log
 import com.example.surya.footballmatch.view.interfaces.DetailView
 import com.example.surya.footballmatch.model.Event
-import com.example.surya.footballmatch.model.MatchRespone
+import com.example.surya.footballmatch.model.MatchResponse
 import com.example.surya.footballmatch.model.Teams
 import com.example.surya.footballmatch.presenter.api.MyApi
 import com.example.surya.footballmatch.presenter.repository.ApiRepository
+import com.example.surya.footballmatch.presenter.repository.MatchRepository
+import com.example.surya.footballmatch.presenter.repository.MatchRepositoryCallback
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class DetailPresenter(private var view : DetailView, private var apiRepository: ApiRepository) {
+class DetailPresenter(private var view : DetailView, private var apiRepository: MatchRepository) {
 
-    fun getDetailEvent(id_event : String){
+    fun getDetailEvent(id : String){
         view.showLoading()
 
-        val connect : MyApi = apiRepository.getUrl().create(MyApi::class.java)
-        connect.getDetailEvent(id_event).enqueue(object : Callback<MatchRespone>{
-            override fun onFailure(call: Call<MatchRespone>, t: Throwable) {
+        apiRepository.getDetailEvent(id, object : MatchRepositoryCallback<MatchResponse?> {
+            override fun onDataLoaded(data: MatchResponse?) {
 
-            }
+//                val detail = data?.events?.get(0)
+                view.onDataLoaded(data)
 
-            override fun onResponse(call: Call<MatchRespone>, response: Response<MatchRespone>) {
-                val getDetail : Event = response.body()!!.events.get(0)
-                view.showDetailEvent(getDetail)
-                view.hideLoading()
+//                view.showDetailEvent(detail)
                 view.showView()
-
             }
 
-
+            override fun onDataError() {
+                view.onDataError()
+            }
         })
+        view.hideLoading()
     }
 
-    fun getDetailHome(id_teams : String){
+    fun getDetailHome(id : String){
         view.showLoading()
 
-        val connect : MyApi = apiRepository.getUrl().create(MyApi::class.java)
-        connect.getDetailTeam(id_teams).enqueue(object : Callback<MatchRespone>{
-            override fun onFailure(call: Call<MatchRespone>, t: Throwable) {
+        apiRepository.getDetailTeam(id, object : MatchRepositoryCallback<MatchResponse?> {
+            override fun onDataLoaded(data: MatchResponse?) {
 
+                view.onDataLoaded(data)
             }
 
-            override fun onResponse(call: Call<MatchRespone>, response: Response<MatchRespone>) {
-                val getTeams : Teams = response.body()!!.teams.get(0)
-                view.showHomeTeam(getTeams)
-                view.hideLoading()
-                view.showView()
+            override fun onDataError() {
+                view.onDataError()
             }
         })
+        view.hideLoading()
     }
-    fun getDetailAway(id_teams : String){
+    fun getDetailAway(id : String){
         view.showLoading()
 
-        val connect : MyApi = apiRepository.getUrl().create(MyApi::class.java)
-        connect.getDetailTeam(id_teams).enqueue(object : Callback<MatchRespone>{
-            override fun onFailure(call: Call<MatchRespone>, t: Throwable) {
-
+        apiRepository.getDetailTeam(id, object : MatchRepositoryCallback<MatchResponse?> {
+            override fun onDataLoaded(data: MatchResponse?) {
+//                val detail = data?.teams?.get(0)
+//                view.showAwayTeam(detail)
+                view.showView()
+                view.onDataLoaded(data)
             }
 
-            override fun onResponse(call: Call<MatchRespone>, response: Response<MatchRespone>) {
-                val getTeams : Teams = response.body()!!.teams.get(0)
-                view.showAwayTeam(getTeams)
-                view.hideLoading()
-                view.showView()
-
-
+            override fun onDataError() {
+                view.onDataError()
             }
         })
+        view.hideLoading()
     }
 }

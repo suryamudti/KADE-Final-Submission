@@ -1,4 +1,4 @@
-package com.example.surya.footballmatch.nextmatch
+package com.example.surya.footballmatch.view.fragment
 
 
 import android.content.Intent
@@ -13,8 +13,9 @@ import com.example.surya.footballmatch.utils.preference.MyPreference
 import com.example.surya.footballmatch.R
 import com.example.surya.footballmatch.view.adapter.MatchAdapter
 import com.example.surya.footballmatch.model.Event
+import com.example.surya.footballmatch.model.MatchResponse
 import com.example.surya.footballmatch.presenter.NextPresenter
-import com.example.surya.footballmatch.presenter.repository.ApiRepository
+import com.example.surya.footballmatch.presenter.repository.MatchRepository
 import com.example.surya.footballmatch.view.interfaces.NextView
 import com.facebook.shimmer.ShimmerFrameLayout
 import com.mlsdev.animatedrv.AnimatedRecyclerView
@@ -40,18 +41,14 @@ class NextFragment : Fragment(), NextView {
         recycle = rootview.findViewById(R.id.rv_next)
         myPreference = MyPreference(this.activity!!)
         shimmer = rootview.findViewById(R.id.shimmer_view_container)
+
+        presenter = NextPresenter(this, MatchRepository())
         showMatch()
+
         return rootview
     }
 
 
-    override fun showLoading() {
-        shimmer.startShimmerAnimation()
-    }
-
-    override fun hideLoading() {
-        shimmer.visibility = View.GONE
-    }
 
     private fun itemMatchClicked(item : Event) {
         val intent = Intent(activity, DetailActivity::class.java)
@@ -97,15 +94,28 @@ class NextFragment : Fragment(), NextView {
     }
 
     private fun showMatch() {
-        val request = ApiRepository()
-        presenter = NextPresenter(this, request)
         presenter.getTeamList(myPreference.getLeagueId())
     }
 
     private fun searchMatch(query: String) {
-        val request = ApiRepository()
-        presenter = NextPresenter(this, request)
         presenter.getTeamSearch(query)
+    }
+
+    override fun onDataLoaded(data: MatchResponse?) {
+
+
+    }
+
+    override fun onDataError() {
+    }
+
+
+    override fun showLoading() {
+        shimmer.startShimmerAnimation()
+    }
+
+    override fun hideLoading() {
+        shimmer.visibility = View.GONE
     }
 
 

@@ -12,13 +12,15 @@ import com.example.surya.footballmatch.utils.preference.MyPreference
 import com.example.surya.footballmatch.R
 import com.example.surya.footballmatch.view.adapter.MatchAdapter
 import com.example.surya.footballmatch.model.Event
+import com.example.surya.footballmatch.model.MatchResponse
 import com.example.surya.footballmatch.presenter.repository.ApiRepository
 import com.example.surya.footballmatch.presenter.PrevPresenter
+import com.example.surya.footballmatch.presenter.repository.MatchRepository
 import com.example.surya.footballmatch.view.interfaces.PrevView
 import com.facebook.shimmer.ShimmerFrameLayout
 
 
-class FragmentPrevious : Fragment() , PrevView {
+class PreviousFragment : Fragment() , PrevView {
 
     private var recycle: RecyclerView? = null
     private var adapter: MatchAdapter? = null
@@ -39,6 +41,8 @@ class FragmentPrevious : Fragment() , PrevView {
 
         shimmer = rootview.findViewById(R.id.shimmer_view_container)
         myPreference = MyPreference(this.activity!!)
+
+        presenter = PrevPresenter(this, MatchRepository())
         showMatch()
         return rootview
     }
@@ -79,9 +83,9 @@ class FragmentPrevious : Fragment() , PrevView {
         })
     }
 
-    override fun ShowMatchList(data: List<Event>) {
+    override fun showMatchList(data: List<Event>) {
         match.clear()
-        match.addAll(data)
+        data?.let { match.addAll(it) }
         adapter = MatchAdapter(match,{itemMatch: Event -> itemMatchClicked(itemMatch)})
         recycle?.adapter = adapter
         recycle?.setHasFixedSize(true)
@@ -91,15 +95,19 @@ class FragmentPrevious : Fragment() , PrevView {
     }
 
     fun showMatch(){
-        val request = ApiRepository()
-        presenter = PrevPresenter(this, request)
         presenter.getLastMatch(myPreference.getLeagueId())
     }
 
     fun searchMatch(query: String) {
-        val request = ApiRepository()
-        presenter = PrevPresenter(this, request)
         presenter.getTeamSearch(query)
+    }
+
+    override fun onDataLoaded(data: MatchResponse?) {
+        data?.events?.let { showMatchList(it) }
+    }
+
+    override fun onDataError() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
 

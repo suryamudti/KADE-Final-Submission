@@ -3,12 +3,12 @@ package com.example.surya.footballmatch.view.adapter
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import com.example.surya.footballmatch.nextmatch.NextFragment
-import com.example.surya.footballmatch.view.fragment.FragmentPrevious
+import com.example.surya.footballmatch.view.fragment.NextFragment
+import com.example.surya.footballmatch.view.fragment.PreviousFragment
 
 class MyPagerAdapter(fragment : FragmentManager) : FragmentPagerAdapter(fragment) {
-    private val pages = listOf(
-        FragmentPrevious(),
+    private val pages:List<Fragment> = listOf(
+        PreviousFragment(),
         NextFragment()
     )
 

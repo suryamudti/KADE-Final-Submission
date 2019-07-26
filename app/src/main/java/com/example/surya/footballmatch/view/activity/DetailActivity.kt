@@ -10,13 +10,11 @@ import android.view.MenuItem
 import android.widget.*
 import com.example.surya.footballmatch.view.interfaces.DetailView
 import com.example.surya.footballmatch.R
-import com.example.surya.footballmatch.model.Event
-import com.example.surya.footballmatch.model.FavoriteNext
-import com.example.surya.footballmatch.model.FavoritePrevious
-import com.example.surya.footballmatch.model.Teams
+import com.example.surya.footballmatch.model.*
 import com.example.surya.footballmatch.presenter.DetailPresenter
 import com.example.surya.footballmatch.presenter.db.database
 import com.example.surya.footballmatch.presenter.repository.ApiRepository
+import com.example.surya.footballmatch.presenter.repository.MatchRepository
 import com.example.surya.footballmatch.utils.invisible
 import com.example.surya.footballmatch.utils.visible
 import com.squareup.picasso.Picasso
@@ -26,6 +24,7 @@ import org.jetbrains.anko.db.insert
 import org.jetbrains.anko.db.select
 
 class DetailActivity : AppCompatActivity(), DetailView {
+
 
     private lateinit var id_event: String
     var id_home: String? = null
@@ -76,8 +75,7 @@ class DetailActivity : AppCompatActivity(), DetailView {
         linear = findViewById(R.id.linearLayout)
 
 
-        val apiRepository = ApiRepository()
-        presenter = DetailPresenter(this, apiRepository)
+        presenter = DetailPresenter(this, MatchRepository())
         id_event = intent.getStringExtra("id_event")
         id_home = intent.getStringExtra("id_home")
         id_away = intent.getStringExtra("id_away")
@@ -93,18 +91,7 @@ class DetailActivity : AppCompatActivity(), DetailView {
 
     }
 
-    override fun showHomeTeam(teams: Teams) {
-        Picasso.get()
-            .load(teams.strTeamBadge)
-            .into(imgHome)
-    }
 
-    override fun showAwayTeam(teams: Teams) {
-        Picasso.get()
-            .load(teams.strTeamBadge)
-            .into(imgAway)
-
-    }
 
 
     override fun showView() {
@@ -122,24 +109,6 @@ class DetailActivity : AppCompatActivity(), DetailView {
 
     }
 
-    override fun showDetailEvent(event: Event) {
-        supportActionBar?.title = event.strEvent
-        matchGo = event
-        txtScoreHome?.text = event.intHomeScore
-        txtScoreAway?.text = event.intAwayScore
-        txtNamaTeams?.text = event.strEvent
-        txtGoalHome?.text = event.strHomeGoalDetails
-        txtGoalAway?.text = event.strAwayGoalDetails
-        txtKiperHome?.text = event.strHomeLineupGoalkeeper
-        txtKiperAway?.text = event.strAwayLineupGoalkeeper
-        txtBekHome?.text = event.strHomeLineupDefense
-        txtBekAway?.text = event.strAwayLineupDefense
-        txtPenyerangHome?.text = event.strHomeLineupForward
-        txtPenyerangAway?.text = event.strAwayLineupForward
-        txtGelandangHome?.text = event.strHomeLineupMidfield
-        txtGelandangAway?.text = event.strAwayLineupMidfield
-        setFavorite()
-    }
 
     private fun addToFavorite() {
 
@@ -281,6 +250,47 @@ class DetailActivity : AppCompatActivity(), DetailView {
                 isFavorite = true
             }
         }
+    }
+
+    override fun showDetailEvent(event: Event?) {
+        supportActionBar?.title = event?.strEvent
+        matchGo = event
+        txtScoreHome?.text = event?.intHomeScore
+        txtScoreAway?.text = event?.intAwayScore
+        txtNamaTeams?.text = event?.strEvent
+        txtGoalHome?.text = event?.strHomeGoalDetails
+        txtGoalAway?.text = event?.strAwayGoalDetails
+        txtKiperHome?.text = event?.strHomeLineupGoalkeeper
+        txtKiperAway?.text = event?.strAwayLineupGoalkeeper
+        txtBekHome?.text = event?.strHomeLineupDefense
+        txtBekAway?.text = event?.strAwayLineupDefense
+        txtPenyerangHome?.text = event?.strHomeLineupForward
+        txtPenyerangAway?.text = event?.strAwayLineupForward
+        txtGelandangHome?.text = event?.strHomeLineupMidfield
+        txtGelandangAway?.text = event?.strAwayLineupMidfield
+        setFavorite()
+    }
+
+    override fun showHomeTeam(teams: Teams?) {
+        Picasso.get()
+            .load(teams?.strTeamBadge)
+            .into(imgHome)
+    }
+
+    override fun showAwayTeam(teams: Teams?) {
+        Picasso.get()
+            .load(teams?.strTeamBadge)
+            .into(imgAway)
+    }
+
+    override fun onDataLoaded(data: MatchResponse?) {
+        showAwayTeam(data?.teams?.get(0))
+        showHomeTeam(data?.teams?.get(0))
+        showDetailEvent(data?.events?.get(0))
+    }
+
+    override fun onDataError() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
 }

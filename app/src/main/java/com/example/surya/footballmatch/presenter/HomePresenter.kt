@@ -1,28 +1,27 @@
 package com.example.surya.footballmatch.presenter
 
-import com.example.surya.footballmatch.model.League
 import com.example.surya.footballmatch.model.LeagueResponse
-import com.example.surya.footballmatch.presenter.api.MyApi
-import com.example.surya.footballmatch.presenter.repository.ApiRepository
+import com.example.surya.footballmatch.presenter.repository.MatchRepository
+import com.example.surya.footballmatch.presenter.repository.MatchRepositoryCallback
 import com.example.surya.footballmatch.view.interfaces.HomeView
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
-class HomePresenter(private var view: HomeView, private var apiRepository: ApiRepository) {
+class HomePresenter(private var view: HomeView, private var apiRepository: MatchRepository) {
 
     fun getDetailLeague(id: String) {
-        val connect: MyApi = apiRepository.getUrl().create(MyApi::class.java)
-        connect.getDetailLeague(id).enqueue(object : Callback<LeagueResponse> {
-            override fun onFailure(call: Call<LeagueResponse>, t: Throwable) {
+
+        apiRepository.getDetailLeague(id, object : MatchRepositoryCallback<LeagueResponse> {
+
+
+            override fun onDataLoaded(data: LeagueResponse?) {
+
+                view.onDataLoaded(data)
+
 
             }
 
-            override fun onResponse(call: Call<LeagueResponse>, response: Response<LeagueResponse>) {
-                val get: League? = response.body()?.leagues?.get(0)
-                view?.showLeague(get!!)
+            override fun onDataError() {
+                view.onDataError()
             }
-
         })
     }
 }

@@ -20,7 +20,7 @@ class MainPresenter(private var view: MainView, private var apiRepository: ApiRe
 
             override fun onResponse(call: Call<LeagueResponse>, response: Response<LeagueResponse>) {
                val getDetail : League = response.body()?.leagues!!.get(0)
-                view.showLiga(getDetail)
+                view.showLeague(getDetail)
 
            }
         })

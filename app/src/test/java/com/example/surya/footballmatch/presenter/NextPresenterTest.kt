@@ -2,16 +2,20 @@ package com.example.surya.footballmatch.presenter
 
 import android.util.Log
 import com.example.surya.footballmatch.model.Event
-import com.example.surya.footballmatch.model.MatchRespone
+import com.example.surya.footballmatch.model.MatchResponse
 import com.example.surya.footballmatch.presenter.api.MyApi
 import com.example.surya.footballmatch.presenter.repository.ApiRepository
+import com.example.surya.footballmatch.presenter.repository.MatchRepository
+import com.example.surya.footballmatch.presenter.repository.MatchRepositoryCallback
 import com.example.surya.footballmatch.view.interfaces.NextView
 import com.example.surya.footballmatch.view.interfaces.PrevView
 import com.nhaarman.mockito_kotlin.argumentCaptor
+import com.nhaarman.mockito_kotlin.eq
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
 import org.mockito.Mockito
+import org.mockito.Mockito.verify
 import org.mockito.MockitoAnnotations
 import retrofit2.Call
 import retrofit2.Callback
@@ -20,62 +24,54 @@ import retrofit2.Response
 class NextPresenterTest {
     @Mock
     private lateinit var view: NextView
+
     @Mock
-    private lateinit var apiRepository: ApiRepository
+    private lateinit var apiRepository: MatchRepository
+
+    @Mock
+    private lateinit var matchResponse: MatchResponse
+
+    @Mock
     private lateinit var presenter: NextPresenter
+
     @Before
     fun setUp() {
         MockitoAnnotations.initMocks(this)
-        apiRepository = ApiRepository()
         presenter = NextPresenter(view, apiRepository)
     }
 
     @Test
     fun getTeamListTest() {
+
         val id = "4328"
+
         presenter.getTeamList(id)
-        val connect: MyApi = apiRepository.getUrl().create(MyApi::class.java)
-        argumentCaptor<NextView>().apply {
-            connect.getScheduleNext(id).enqueue(object : Callback<MatchRespone> {
-                override fun onFailure(call: Call<MatchRespone>, t: Throwable) {
 
-                }
+        argumentCaptor<MatchRepositoryCallback<MatchResponse?>>().apply {
 
-                override fun onResponse(call: Call<MatchRespone>, response: Response<MatchRespone>) {
-
-                    val get: List<Event>? = response.body()?.events
-                    firstValue.showScheduleList(get!!)
-                    Mockito.verify(view.showScheduleList(get!!))
-                }
-
-            })
+            verify(apiRepository).getNextMatch(eq(id), capture())
+            firstValue.onDataLoaded(matchResponse)
         }
+
+        Mockito.verify(view).showLoading()
+        Mockito.verify(view).onDataLoaded(matchResponse)
+
 
     }
 
     @Test
     fun getTeamSearchTest() {
-        val club = "chelsea"
-        presenter.getTeamSearch(club)
-        val connect: MyApi = apiRepository.getUrl().create(MyApi::class.java)
-        argumentCaptor<PrevView>().apply {
-            connect.getSearchMatch(club).enqueue(object : Callback<MatchRespone> {
-                override fun onFailure(call: Call<MatchRespone>, t: Throwable) {
-                    Log.d("tag", "responsennya ${t.message}")
+        val query = "chelsea"
+        presenter.getTeamSearch(query)
 
-                }
-
-                override fun onResponse(call: Call<MatchRespone>, response: Response<MatchRespone>) {
-                    view.hideLoading()
-                    val get: List<Event>? = response.body()!!.event
-                    firstValue.ShowMatchList(get!!)
-                    Mockito.verify(view.showScheduleList(get!!))
-
-
-                }
-
-            })
+        argumentCaptor<MatchRepositoryCallback<MatchResponse?>>().apply {
+            Mockito.verify(apiRepository).getSearchMatch(eq(query), capture())
+            firstValue.onDataLoaded(matchResponse)
         }
+
+        Mockito.verify(view).showLoading()
+        Mockito.verify(view).onDataLoaded(matchResponse)
+        Mockito.verify(view).hideLoading()
 
     }
 }
